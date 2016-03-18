@@ -101,8 +101,8 @@ public class Product implements Subject {
 	public void notifyObservers() {
 		System.out
 				.println("---Notifying to all the users when product has a promotion---");
-		for (Observer ob : observers) {
-			ob.update(this.price);
+		for (Observer observer : observers) {
+			observer.update(this.price, this.promotion);
 		}
 
 	}

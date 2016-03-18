@@ -1,5 +1,5 @@
 package org.observerpattern.observer;
 
 public interface Observer {
-	public void update(double price);
+	public void update(double price, boolean promotion);
 }
